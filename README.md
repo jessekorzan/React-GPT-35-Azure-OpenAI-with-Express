@@ -10,7 +10,7 @@ Highlights include:
 
 # Usage
 
-Refer to the section below, Getting Started, to run. Only re-prerequisite is you will need your own openAI key and create a new "secret" (env variable) in your Repl.
+Refer to the section below, Getting Started, for more about running React on Replit. Only re-prerequisite is you will need your own openAI key and create a new "secret" (env variable) in your Repl.
 
 [Login into Azure](https://portal.azure.com/](https://www.npmjs.com/package/azure-openai ) to configurd your Azure OpenAI's key, endpoint and deploymentId.
 [How to use Secrets in Repl](https://docs.replit.com/programming-ide/workspace-features/secrets) to configure your environment variable. You'll need two secrets, "endpoint" and "openAI", to work with the script located in /api/server.js
