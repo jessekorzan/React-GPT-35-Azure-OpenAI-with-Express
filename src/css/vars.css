@@ -1,0 +1,13 @@
+html {
+	--white : #ffffff;
+	--roseGrey: #F8F6F7;
+	--boxShadow: #11111122;
+	--black: #011627;
+	--purple: #620DEC;
+	--yellow: #FFF500;
+	--yellow--alt: #F6DE00;
+	--red: #fc585f;
+	--green: #44bc8f;
+	--blue: #3751FF;
+	--spacer: 40px;
+}

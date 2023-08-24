@@ -1,0 +1,99 @@
+body {
+	background: white !important;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Oxygen, Cantarell, sans-serif;
+	font-size: 22px;
+}
+
+.App {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(1, minMax(300px, 1280px));
+	grid-template-rows: 1fr auto;
+	justify-content: center;
+}
+
+.App > section {
+	position: relative;
+	width: 100%;
+	background: #ffffff11;
+	
+}
+.App > section:first-child {
+	overflow: scroll;
+	padding-bottom: 2vw;
+	display: flex;
+	flex-direction: column-reverse;
+}
+input {
+	width: 100%;
+	font-size: 2vw;
+	padding: 40px;
+	line-height: 2vw;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	background: var(--roseGrey);
+	color: var(--blue);
+	
+}
+input::placeholder {
+	font-weight: 400;
+	color: var(--blue);
+	font-style:italic;
+	opacity: 0.35;
+}
+button {
+	position: absolute;
+	bottom: calc(50% - 22px);
+	right: 2vw;
+	background: transparent;
+	border: 2px solid var(--blue);
+	color: var(--blue);
+	font-size: 14px;
+	line-height: 44px;
+	padding: 0 1vw;
+	outline: none;
+	text-transform: capitalize;
+}
+
+.Payload {
+	padding: 2vw;
+}
+.Entry {
+	position: relative;
+	display: grid;
+	width: 100%;
+}
+.Entry > div {
+	position: relative;
+	padding: clamp(12px, 1.85vw, 30px);
+	width: auto;
+	max-width: 90%;
+	border-radius: 12px;
+	margin-bottom: 6px;
+	font-weight: 300;
+	line-height: 125%;
+	font-size: clamp( 18px, 2vw, 40px);
+}
+.Entry.user > div {
+	background: #3751FF11;
+	justify-self: end;
+	color: var(--blue);
+}
+.Entry.bot > div {
+	justify-self: start;
+	background: #00000011;
+	color: var(--black);
+}
+.Entry.bot > div:before {
+	content: attr(data-label);
+	text-transform: capitalize;
+	position: absolute;
+	top: -2.5vw;
+	font-size: clamp( 11px, 1vw, 22px);
+}
